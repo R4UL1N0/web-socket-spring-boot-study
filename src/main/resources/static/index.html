@@ -8,15 +8,17 @@
 </head>
 <body>
     <div class="login-page">
-        <form id="username-form" name="username-form">
+        <form id="login-form" name="username-form">
             <label class="title">Type your username to enter the Chat</label>
-            <input type="text" id="name" class="login-form-input" autocomplete="off">
+            <input type="text" id="username-input" class="login-form-input" autocomplete="off">
             <button type="submit">Start Chatting</button>
         </form>
     </div>
 
-    <div class="message-page hidden">
-        <ul id="message-area"></ul>
+    <div class="chat-page hidden">
+        <h1>Chat</h1>
+        <p class="connecting">Connecting...</p>
+        <ul id="messages-area"></ul>
         <form id="message-form" name="message-form">
             <input type="text" id="message" placeholder="Type a message..." autocomplete="off" class="message-form-input">
             <button type="submit">Send</button>
